@@ -12,7 +12,47 @@ grandes telas: acima de 1200px
 */
 
 @media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
 
+    body {
+        background-image: url("../imagens/back-print.jpg");
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-align: center;
+        color: black;
+    }
+
+    main::after {
+        content: "Este artigo foi impresso graças a contribuiçao de participantes";
+        text-decoration: overline;
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: block;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
 
 }
 
@@ -44,9 +84,9 @@ grandes telas: acima de 1200px
 }
 
 /*  desktops   */
-@media  screen and (min-width:992px) and (max-width:1200) {
+@media  screen and (min-width:992px)  {
     body {
-        background-image: url(../imagens/back-pc.jpg);
+        background-image: url("../imagens/back-pc.jpg");
     }
 
     img#phone {
