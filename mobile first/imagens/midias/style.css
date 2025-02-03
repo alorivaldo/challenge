@@ -16,9 +16,9 @@ grandes telas: acima de 1200px
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:600px) {
     body {
-        background-image: url();
+        background-image: url(../imagens/back-phone.jpg);
     }
 }
 
